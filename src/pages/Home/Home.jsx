@@ -9,7 +9,6 @@ export default function Home(){
             <TitleDescription>LearnEdu es un proyecto donde podrás aprender y perfeccionar Tecnologías, las páginas se actualizarán constantemente para que puedas mejorar tu aprendizaje constantemente.</TitleDescription>
             <SubTitle>Lista de secciones para aprender React</SubTitle>
             <PageList/>
-
         </Layout>
     )
 }

@@ -1,5 +1,5 @@
-import { BrowserRouter , Routes, Route, Navigate} from 'react-router-dom'
-import { Home, RouterPage, EnvPage, Internalization, Create, Components, Private} from '../pages'
+import { BrowserRouter ,Routes, Route, Navigate} from 'react-router-dom'
+import { Home, RouterPage, EnvPage, Internalization, Create, Components, Private, Zustand, ZustandPersist, Context, Websockets, Libreries} from '../pages'
 
 export default function Router(){
     return(
@@ -13,6 +13,11 @@ export default function Router(){
             <Route path='/env' Component={EnvPage}/>
             <Route path='/internalization' Component={Internalization}/>
             <Route path='/private' Component={Private}/>
+            <Route path='/context' Component={Context}/>
+            <Route path='/zustand' Component={Zustand}/>
+            <Route path='/zustandPersist' Component={ZustandPersist}/>
+            <Route path='/websockets' Component={Websockets}/>
+            <Route path='/libraries' Component={Libreries}/>
         </Routes>
         </BrowserRouter>
     )
