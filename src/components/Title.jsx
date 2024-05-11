@@ -14,7 +14,9 @@ import {motion} from 'framer-motion'
 }*/
 export function Title({children}){
     return(
-            <h1 className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text font-semibold text-3xl text-center py-2">{children}</h1>
+        <div className='flex justify-center'>
+            <h1 className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text font-semibold text-3xl py-2 px-2 text-center">{children}</h1>
+        </div>
     )
 }
 /*<motion.div

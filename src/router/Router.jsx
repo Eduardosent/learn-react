@@ -1,5 +1,5 @@
 import { BrowserRouter ,Routes, Route, Navigate} from 'react-router-dom'
-import { Home, RouterPage, EnvPage, Internalization, Create, Components, Private, Zustand, ZustandPersist, Context, Websockets, Libreries, Payments, Notification} from '../pages'
+import { Home, RouterPage, EnvPage, Internalization, Create, Components, Private, Zustand, ZustandPersist, Context, Websockets, Libreries, Payments, Notification, Fetch} from '../pages'
 
 export default function Router(){
     return(
@@ -20,6 +20,7 @@ export default function Router(){
             <Route path='/libraries' Component={Libreries}/>
             <Route path='/payments' Component={Payments}/>
             <Route path='/push-notification' Component={Notification}/>
+            <Route path='/fetch' Component={Fetch}/>
         </Routes>
         </BrowserRouter>
     )
