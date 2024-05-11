@@ -6,17 +6,6 @@ import { code } from "./const";
 
 export default function  Fetch(){
 
-    const[usuarios,setUsuarios] = useState([])
-
-    async function getData(){
-        await fetch('http://localhost:3000/users')
-        .then(data=>data.json())
-        .then((res)=>{console.log(res);setUsuarios(res.docs)})
-        .catch(e=>console.log(e))
-    }
-    useEffect(()=>{
-        getData()
-    },[])
     return(
         <Layout>
             <Title>Usando Fetch para peticiones Http</Title>
