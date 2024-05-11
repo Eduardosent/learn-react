@@ -1,5 +1,6 @@
 import { Code, ExtraText, SubTitle, Title, TitleDescription } from "../../components";
 import Layout from "../../layout/Layout";
+import { code } from "./const";
 
 export default function Libreries(){
     const icons = 'npm i react-icons'
@@ -9,6 +10,7 @@ export default function Libreries(){
     const framer = 'npm i framer-motion'
     const i18next = 'npm i i18next'
     const zustand = 'npm i zustand'
+    const typeit = 'npm i typeit-react'
     return(
         <Layout>
             <Title>Librerias útiles</Title>
@@ -34,6 +36,11 @@ export default function Libreries(){
             <SubTitle>Zustand</SubTitle>
             <ExtraText>Librería para el manejo de los estados de la aplicación</ExtraText>
             <Code code={zustand}/>
+            <SubTitle>TypeIt</SubTitle>
+            <ExtraText>Animar la escritura de algún texto</ExtraText>
+            <Code code={typeit}/>
+            <ExtraText>Ejemplo:</ExtraText>
+            <Code code={code.extype}/>
         </Layout>
     )
 }

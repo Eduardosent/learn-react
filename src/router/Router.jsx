@@ -1,5 +1,5 @@
 import { BrowserRouter ,Routes, Route, Navigate} from 'react-router-dom'
-import { Home, RouterPage, EnvPage, Internalization, Create, Components, Private, Zustand, ZustandPersist, Context, Websockets, Libreries} from '../pages'
+import { Home, RouterPage, EnvPage, Internalization, Create, Components, Private, Zustand, ZustandPersist, Context, Websockets, Libreries, Payments, Notification} from '../pages'
 
 export default function Router(){
     return(
@@ -18,6 +18,8 @@ export default function Router(){
             <Route path='/zustandPersist' Component={ZustandPersist}/>
             <Route path='/websockets' Component={Websockets}/>
             <Route path='/libraries' Component={Libreries}/>
+            <Route path='/payments' Component={Payments}/>
+            <Route path='/push-notification' Component={Notification}/>
         </Routes>
         </BrowserRouter>
     )

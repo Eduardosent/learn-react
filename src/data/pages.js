@@ -1,4 +1,4 @@
-import { Components, Create, RouterPage, EnvPage, Internalization, Zustand, ZustandPersist, Context, Websockets, Libreries } from "../pages";
+import { Components, Create, RouterPage, EnvPage, Internalization, Zustand, ZustandPersist, Context, Websockets, Libreries, Payments, Notification } from "../pages";
 
 export const pages = [
     {name:'Crear primer proyeco de React', route:'/create', component:Create, level:1},
@@ -11,4 +11,6 @@ export const pages = [
     {name:'Persiste Estados con Zustand', route:'/zustandPersist', component:ZustandPersist, level:2},
     {name:'Websockets', route:'/websockets', component:Websockets, level:3},
     {name:'Libraries', route:'/libraries', component:Libreries, level:4},
+    {name:'Payments', route:'/payments', component:Payments, level:4},
+    {name:'Push Notification', route:'/push-notification', component:Notification, level:4},
 ];
